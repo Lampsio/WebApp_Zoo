@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Dodawanie osoby do bazy</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+    <h2> Dodawanie osoby do bazy:</h2>
+
+    <form method="POST" th:object="${transData}">
+
+        <div class="form-group">    
+            <label> Imię: </label>:
+            <input type="text" th:field="${transData.firstName}" value=""/><br/>            
+        </div>       
+
+        <br/>
+        
+        <div class="form-group">    
+            <label> Nazwisko: </label>:
+            <input type="text" th:field="${transData.lastName}" value=""/><br/>            
+        </div>       
+
+        <br/>
+        
+        <div class="form-group">    
+            <label> Wiek: </label>:
+            <input type="text" th:field="${transData.age}" value=""/><br/>            
+        </div>       
+
+        <br/>
+        
+        <div class="form-group">    
+            <label> Waga: </label>:
+            <input type="text" th:field="${transData.weight}" value=""/><br/>            
+        </div>       
+
+        <br/>
+
+
+
+        <input type="submit" value="Dodaj" />
+
+
+    </form>
+    
+    
+
+</body>
+</html>
+

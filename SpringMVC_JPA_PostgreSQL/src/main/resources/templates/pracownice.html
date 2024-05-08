@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Pracownice</title>
+</head>
+<body>
+<h1>Lista pracownic</h1>
+<ul>
+    <li th:each="pracownica : ${pracownice}">
+        <p>Imię: [[${pracownica.imie}]]</p>
+        <p>Nazwisko: [[${pracownica.nazwisko}]]</p>
+        <p>Stanowisko: [[${pracownica.stanowisko}]]</p>
+        <p>Plec: [[${pracownica.plec}]]</p>
+    </li>
+</ul>
+</body>
+</html>

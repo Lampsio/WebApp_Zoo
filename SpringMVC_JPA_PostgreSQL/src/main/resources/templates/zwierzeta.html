@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Zwierzęta</title>
+</head>
+<body>
+<h1>Lista zwierząt</h1>
+<ul>
+    <li th:each="zwierze : ${zwierzeta}">
+        <p>Imię: [[${zwierze.imie}]]</p>
+        <p>Gatunek: [[${zwierze.gatunek}]]</p>
+        <p>Rasa: [[${zwierze.rasa}]]</p>
+    </li>
+</ul>
+</body>
+</html>

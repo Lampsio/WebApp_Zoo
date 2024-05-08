@@ -1,0 +1,6 @@
+controler\MyController.class
+controler\Person.class
+controler\StartApp.class
+controler\TransData.class
+controler\DataLoader.class
+controler\PersonRepository.class

@@ -1,0 +1,31 @@
+Opis wartosci parametrow dla Hibernate
+
+----------------------------------------------
+                                      
+Parametr: spring.jpa.show-sql
+
+Parametr steruje tym, czy na konsole maja byc wypisywane zapytania SQL, 
+które trafiaja do bazy danych. Jest to przydatne przy rozwijaniu aplikacji 
+(mozemy latwo zobaczyc, czy operacja, która powinna sie wykonac, faktycznie zostala wykonana)
+
+Mozliwe wartosci: true lub false                
+
+----------------------------------------------
+
+Parametr: spring.jpa.hibernate.ddl-auto
+
+Mozliwe wartosci:
+
+validate – tylko weryfikuje, tej opcji powinnismy uzywac w dzialajacej aplikacji, jesli pojawi sie jakis blad 
+to aplikacja sie nie uruchomi
+
+update – Hibernate w przypadku natrafienia na niespójnosc spróbuje ja usunac poprzez modyfikacje schematu; 
+narazamy sie przez to na utrate danych, opcja nadaje sie glównie do testowania i rozwoju
+
+create – tworzy schemat i strukture, usuwajac istniejace dane
+
+create-drop – podobnie jak create tworzy schemat i strukture usuwajac istniejace dane, ale przy zamykaniu 
+aplikacji automatycznie usuwa cala zawartosc uzywanej bazy danych
+
+
+
