@@ -18,3 +18,13 @@ The application allows adding, deleting, editing, and viewing details related to
 - **PostgreSQL**: As the relational database to store all the data related to the zoo.
 - **React**: For building the user interface of the web application.
 - **Bootstrap**: For designing and customizing responsive mobile-first sites.
+
+### Image HOME
+
+<img src="okno1.PNG" alt="JavaPaint Screenshot">
+
+
+### Image ANIMALS
+
+<img src="okno2.PNG" alt="JavaPaint Screenshot">
+
